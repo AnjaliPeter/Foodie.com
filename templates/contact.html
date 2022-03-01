@@ -11,7 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Cantora One' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
-    <title>Foodie || Home</title>
+    <title>Foodie || ContactUs</title>
     <link rel="icon" href="../static/images/logo.jpg" type="image/x-icon">
 </head>
 <body>
@@ -38,30 +38,27 @@
         </table>
     </div>
     <div class="homebg">
-        <table id="bgtable">
-            <tr>
-                <td id="tagline">
-                    <h3>" We speak the good food language "</h3>
-                    <h6>Better food , Better mood</h6>
-                </td>
-            </tr>
-        </table>
-        <h2 id="heading">You Must Try !</h2>
-        <hr>
-        <table class="dishtab" cellspacing="45px">
-            <tr>
-                {% for dish in top %}
-                <td class="card">
-                    <img src="../static/images/{{dish[0]}}" alt="dish" class="cardimg">
-                    <div class="content">
-                        <h3 id="title">{{dish[1]}}</h3>
-                        <h4 id="price">{{dish[2]}}</h4>
-                        <h5 id="rating">Rating: {{dish[3]}}</h5>
-                    </div>
-                </td>
-                {%endfor%}
-            </tr>
-        </table>
+        <h3 id="head">Foodie.com</h3>
+        <p id="para">Foodie.com is India's largest online food ordering and delivery platform,
+             founded in July 2014. Foodie.com is based in Bangalore, India, and as of September 2021, 
+             is operating in 500 Indian cities. 
+            In early 2019, Foodie.com expanded into general product deliveries under the name Foodie.com Stores. 
+            With the launch of Foodie.com, often dubbed as one of India’s fastest-growing companies, ordering food at
+             the home, office, or even while throwing a party seems like a breeze.
+             Foodie.com has been quite popular even in its early days,
+              it witnessed an exemplary expansion and is carrying on its successful legacy till now!
+        </p>
+        <br><br><br><br>
+        <h4 id="cont">Contact Us</h4>
+        <p id="contpara">
+            Foodie.com Pvt Ltd<br>
+            Trivandrum , Kerala<br>
+            PIN : 666-777<br>
+            Email : foodie2019@gmail.com<br>
+            Whattsapp : 999-888-4444<br>
+            Phone : 04778 - 2347755
+        </p>
+        <br><br>
     </div>
     <div class="footer">
         One Thousand Flavors in One Place !<br>

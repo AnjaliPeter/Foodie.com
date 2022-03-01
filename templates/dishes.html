@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Black Han Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Calistoga' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cantora One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
+    <title>Foodie || Dishes</title>
+    <link rel="icon" href="../static/images/logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <table class="logotab">
+            <tr>
+                <td>
+                    <img src="../static/images/logo.jpg" alt="logo" id="logo">
+                </td>
+                <td id="brand">
+                    <h1>Foodie.com</h1>
+                </td>
+                <td id="blank"></td>
+                <td id="home">
+                    <a href="/">Home</a>
+                </td>
+                <td id="dishes">
+                    <a href="/dishes">Dishes</a>
+                </td>
+                <td id="contact">
+                    <a href="/contact">ContactUs</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="homebg">
+        <table class="disheslist">
+            <tr id="dishrow">
+                <td class="dishitem">Desserts</td>
+                <td class="dishitem">Burgers</td>
+                <td class="dishitem">Drinks</td>
+                <td class="dishitem">Cakes</td>
+            </tr>
+            <tr>
+                <td class="explore dishitem" colspan="4">Explore yourself . . .</td>
+            </tr>
+        </table>
+        <h2 id="heading">Top 4 in Rating</h2>
+        <hr>
+        <table class="dishtab" cellspacing="45px">
+            <tr>
+                {% for dish in top %}
+                <td class="card">
+                    <img src="../static/images/{{dish[0]}}" alt="dish" class="cardimg">
+                    <div class="content">
+                        <h3 id="title">{{dish[1]}}</h3>
+                        <h4 id="price">{{dish[2]}}</h4>
+                        <h5 id="rating">Rating: {{dish[3]}}</h5>
+                    </div>
+                </td>
+                {%endfor%}
+            </tr>
+        </table>
+        <h2 id="heading">Desserts</h2>
+        <hr>
+        <table class="dishtab" cellspacing="45px">
+            <tr>
+                {% for dessert in desserts %}
+                <td class="card">
+                    <img src="../static/images/{{dessert[0]}}" alt="dish" class="cardimg">
+                    <div class="content">
+                        <h3 id="title">{{dessert[1]}}</h3>
+                        <h4 id="price">{{dessert[2]}}</h4>
+                        <h5 id="rating">Rating: {{dessert[3]}}</h5>
+                    </div>
+                </td>
+                {%endfor%}
+            </tr>
+        </table>
+        <h2 id="heading">Burgers</h2>
+        <hr>
+        <table class="dishtab" cellspacing="45px">
+            <tr>
+                {% for dish in burgers %}
+                <td class="card">
+                    <img src="../static/images/{{dish[0]}}" alt="dish" class="cardimg">
+                    <div class="content">
+                        <h3 id="title">{{dish[1]}}</h3>
+                        <h4 id="price">{{dish[2]}}</h4>
+                        <h5 id="rating">Rating: {{dish[3]}}</h5>
+                    </div>
+                </td>
+                {%endfor%}
+            </tr>
+        </table>
+        <h2 id="heading">Drinks</h2>
+        <hr>
+        <table class="dishtab" cellspacing="45px">
+            <tr>
+                {% for dish in drinks %}
+                <td class="card">
+                    <img src="../static/images/{{dish[0]}}" alt="dish" class="cardimg">
+                    <div class="content">
+                        <h3 id="title">{{dish[1]}}</h3>
+                        <h4 id="price">{{dish[2]}}</h4>
+                        <h5 id="rating">Rating: {{dish[3]}}</h5>
+                    </div>
+                </td>
+                {%endfor%}
+            </tr>
+        </table>
+        <h2 id="heading">Cakes</h2>
+        <hr>
+        <table class="dishtab" cellspacing="45px">
+            <tr>
+                {% for dish in cakes %}
+                <td class="card">
+                    <img src="../static/images/{{dish[0]}}" alt="dish" class="cardimg">
+                    <div class="content">
+                        <h3 id="title">{{dish[1]}}</h3>
+                        <h4 id="price">{{dish[2]}}</h4>
+                        <h5 id="rating">Rating: {{dish[3]}}</h5>
+                    </div>
+                </td>
+                {%endfor%}
+            </tr>
+        </table>
+    </div>
+    <div class="footer">
+        One Thousand Flavors in One Place !<br>
+        © Foodie.com 2018-25
+    </div>
+</body>
+</html>
