@@ -1,0 +1,228 @@
+/* whole page */
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+/* header */
+.header{
+    background-color: rgb(255, 148, 47);
+    box-shadow: 0px 0px 10px 0px rgb(250, 125, 41);
+    width: 100%;
+    height: 4em;
+    text-align: center;
+}
+
+.logotab{
+    margin-left: 5em;
+}
+
+#logo{
+    height: 3em;
+    width: 3em;
+    padding: 5px;
+}
+
+#brand{
+    color: white;
+    padding: 5px;
+    padding-top: 15px;
+    font-weight: bold;
+    font-family: "Charm";
+    letter-spacing: 1px;
+}
+
+#blank{
+    width: 58%;
+}
+
+#home{
+    width: 4em;
+    padding: 5px;
+    padding-top: 25px;
+    font-size: large;
+    font-family: "Calistoga";
+}
+
+#dishes{
+    width: 4em;
+    padding: 5px;
+    padding-top: 25px;
+    font-size: large;
+    font-family: "Calistoga";
+}
+
+#contact{
+    width: 4em;
+    padding: 5px;
+    padding-top: 25px;
+    font-size: large;
+    font-family: "Calistoga";
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+/* home page */
+#bgtable{
+    width: 100%;
+    height: 28em;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+}
+
+.homebg{
+    /* background: linear-gradient(to top,rgb(248, 168, 94),rgb(250, 231, 215)); */
+    background-color: rgb(252, 189, 138);
+    height: auto;
+}
+
+#heading{
+    margin: 1em 0px 18px 3em;
+    color: rgb(41, 40, 40);
+    font-family: "Concert One";
+    letter-spacing: 1px;
+}
+
+#tagline{
+    color: white;
+    width: 100%;
+    font-size: 62px;
+    text-align: center;
+    font-family: "Cantora One";
+    text-shadow: 4px 5px rgb(26, 25, 25);
+}
+
+hr{
+    width: 90%;
+    margin-left: 4em;
+    border: 1px solid rgb(233, 231, 231);
+}
+
+.card{
+    width: 15em;
+    height: 17em;
+    color: #000;
+    background-color: white;
+    border-radius: 5px;
+    vertical-align: 0%;
+    /* margin-left: 6em; */
+}
+
+.cardimg{
+    width: 15em;
+    height: 11em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.dishtab{
+    padding-left: 3em;
+    /* padding-top: 2em; */
+}
+
+.content{
+    padding: 1em;
+    font-family: "Cantora One";
+    letter-spacing: 1px;
+}
+
+#title{
+    color: rgb(36, 36, 36);
+}
+
+#price{
+    color: rgb(66, 133, 66);
+    padding-top: 3px;
+}
+
+#rating{
+    color: rgb(247, 141, 71);
+    padding-top: 3px;
+}
+
+.footer{
+    background-color: rgb(250, 143, 3);
+    color: white;
+    height: 4em;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Charm";
+    letter-spacing: 2px;
+    padding-top: 1em;
+}
+
+
+/* dishes page */
+.disheslist{
+    width: 100%;
+    height: 28em;
+    background-image: url("../images/lbg.jpg");
+    background-size: cover;
+    padding-left: 4em;
+    padding-top: 2em;
+}
+
+.dishitem{
+    width: 25%;
+    height: 3em;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: "Cantora One";
+    text-shadow: 4px 5px rgb(26, 25, 25);
+    letter-spacing: 1px;
+}
+
+.explore{
+    width: 100%;
+    text-align: center;
+    padding-top: 4em;
+}
+
+
+/* contact page */
+#head{
+    margin-left: 2em;
+    padding-top: 1em;
+    font-size: 35px;
+    font-family: "Cantora One";
+    letter-spacing: 1px;
+    color: rgb(34, 34, 34);
+}
+
+#para{
+    text-align: justify;
+    color: rgb(34, 34, 34);
+    padding-top: 25px;
+    padding-left: 4em;
+    padding-right: 4em;
+    font-size: 20px;
+    font-family: "Cantora One";
+    letter-spacing: 1px;
+}
+
+#cont{
+    color: rgb(34, 34, 34);
+    padding-top: 25px;
+    padding-left: 80px;
+    padding-right: 4em;
+    font-size: 23px;
+    font-family: "Cantora One";
+    letter-spacing: 1px;
+}
+
+#contpara{
+    color: rgb(34, 34, 34);
+    text-align: justify;
+    padding-top: 25px;
+    padding-left: 4em;
+    padding-right: 4em;
+    font-size: 20px;
+    font-family: "Cantora One";
+    letter-spacing: 1px;
+}
